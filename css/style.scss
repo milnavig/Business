@@ -1,0 +1,54 @@
+@import 'header';
+
+$columns: 33.3% 1fr 33.3%;
+$rows: 200px 170px 200px 200px 200px;
+
+$areas: "my-header my-header my-header"
+        "my-menu my-menu my-menu"
+        "my-slider my-slider my-slider"
+        "my-news my-news my-news"
+        "footer1 footer2 footer3";
+
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $areas;
+}
+
+header {
+    grid-area: my-header;
+    background-color: antiquewhite;
+}
+
+div#menu {
+    grid-area: my-menu;
+    background-color: aquamarine;
+}
+
+div#slider {
+    grid-area: my-slider;
+    background-color: bisque;
+}
+
+div#news {
+    grid-area: my-news;
+    background-color: darkgreen;
+}
+
+footer#footer1 {
+    grid-area: footer1;
+    background-color: firebrick;
+}
+
+footer#footer2 {
+    grid-area: footer2;
+    background-color: chartreuse;
+}
+
+footer#footer3 {
+    grid-area: footer3;
+    background-color: fuchsia;
+}
